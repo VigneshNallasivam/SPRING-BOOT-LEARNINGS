@@ -1,0 +1,31 @@
+//HTTP RESPONSE CODES
+
+
+
+                                             HTTP RESPONSE CODES
+											 ===================
+Informational responses ==>(100 – 199):-
+========================================
+-Indicates that an initial part of the request was received and the client should continue.
+-After sending this, the server must respond after receiving the request.
+
+Successful responses    ==>(200 – 299):-
+========================================
+-Let you know your request was successfully processed.
+
+Redirection messages    ==>(300 – 399):-
+========================================
+-Indicates that the request was not performed and the client needs to take further action for a successful request.
+
+Client error responses  ==>(400 – 499):-
+========================================
+-The server request cannot be completed at all because of problems on the side of the client.
+
+Server error responses  ==>(500 – 599):-
+========================================
+-Indicate that the server encountered an error and may be unable to perform the client's request.
+
+Note:-
+======
+If you receive a response that is not in this list, it is a non-standard response, 
+possibly custom to the server's software.

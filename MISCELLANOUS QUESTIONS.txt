@@ -1,0 +1,171 @@
+//MISCELLANOUS QUESTIONS
+
+
+
+                                             MISCELLANOUS QUESTIONS
+											 ======================
+1.What is Wrapper Class?
+Answer:-
+========
+-The wrapper class in Java provides the mechanism to convert primitive into object and object into primitive.
+-The automatic conversion of primitive into an object is known as autoboxing and vice-versa unboxing.
+-USES OF WRAPPER CLASSES:-
+ =>Change the value in Method: Java supports only call by value. So, if we pass a primitive value, 
+                               it will not change the original value. 
+							   But, if we convert the primitive value in an object, it will change the original value.
+ =>Serialization: We need to convert the objects into streams to perform the serialization. 
+                  If we have a primitive value, we can convert it in objects through the wrapper classes.
+ =>Synchronization: Java synchronization works with objects in Multithreading.
+ =>java.util package: The java.util package provides the utility classes to deal with objects.
+ =>Collection Framework: Java collection framework works with objects only. 
+                         All classes of the collection framework (ArrayList, LinkedList, Vector, HashSet, LinkedHashSet, TreeSet, PriorityQueue, ArrayDeque, etc.) deal with objects only.
+Primitive Type	Wrapper class
+boolean	Boolean
+char	Character
+byte	Byte
+short	Short
+int	Integer
+long	Long
+float	Float
+double	Double
+
+2.STACK MEMORY vs HEAP MEMORY
+Answer:-
+========
+STACK MEMORY :The stack is used to store the order of method execution and local variables.
+HEAP MEMORY :Heap memory stores the objects and it uses dynamic memory allocation and deallocation.
+
+3.CLASS-LOADER
+Answer:-
+========
+-The Java ClassLoader is a part of the Java Runtime Environment that dynamically loads Java classes into the Java Virtual Machine. 
+-The Java run time system does not need to know about files and file systems because of classloaders. 
+-Java classes aren’t loaded into memory all at once, but when required by an application. 
+-At this point, the Java ClassLoader is called by the JRE and these ClassLoaders load classes into memory dynamically.
+-Java ClassLoader is an abstract class. It belongs to a java.lang package. 
+-It loads classes from different resources. 
+-Java ClassLoader is used to load the classes at run time. 
+-In other words, JVM performs the linking process at runtime. 
+-Classes are loaded into the JVM according to need.
+
+Types of Class-Loader:-
+----------------------- 
+=>Boot-Strap/primordial class loader
+=>Extension class loader
+=>System/Application class loader
+
+4.BEAN-SCOPE
+Answer:-
+========
+-The scope of a bean defines the life cycle and visibility of that bean in the contexts we use it.
+-Spring Bean Scopes allows us to have more granular control of the bean instances creation.
+-Sometimes we want to create bean instance as singleton but in some other cases we might want it to be created on every request or once in a session.
+-5 TYPES OF SCOPE USAGES OF BEAN-SCOPE
+ =>1.singleton : This scopes the bean definition to a single instance per Spring IoC container (default).
+ =>2.prototype : This scopes a single bean definition to have any number of object instances.
+ =>3.request : This scopes a bean definition to an HTTP request.
+               Only valid in the context of a web-aware Spring ApplicationContext.
+ =>4.session : This scopes a bean definition to an HTTP session. 
+               Only valid in the context of a web-aware Spring ApplicationContext.
+ =>5.global-session : This scopes a bean definition to a global HTTP session. 
+                      Only valid in the context of a web-aware Spring ApplicationContext.
+					  
+5.MARKER-INTERFACE
+Answer:-
+========
+-It is an empty interface (no field or methods). 
+-Examples of marker interface are Serializable, Cloneable and Remote interface. 
+-All these interfaces are empty interfaces. 
+-TYPES:-
+--------
+ =>Cloneable interface : Cloneable interface is present in java.lang package. 
+                         There is a method clone() in Object class. 
+                         A class that implements the Cloneable interface indicates that it is legal for clone() method to make a field-for-field copy of instances of that class.
+ =>Serializable interface : Serializable interface is present in java.io package. 
+                            It is used to make an object eligible for saving its state into a file. 
+							This is called Serialization. 
+ =>Remote interface : Remote interface is present in java.rmi package.(RMI=Remote Method Invocation) 
+                      A remote object is an object which is stored at one machine and accessed from another machine. 
+					  So, to make an object a remote object, we need to flag it with Remote interface. 
+
+
+6.OBJECT-CLONING
+Answer:-
+========
+-The object cloning is a way to create exact copy of an object. 
+-The clone() method of Object class is used to clone an object.
+-2 Ways to create object cloning 1.Using 'new' Keyword
+                                  2.Using clone() method by using cloneable interface
+-The java.lang.Cloneable interface must be implemented by the class whose object clone we want to create.
+ If we don't implement Cloneable interface, clone() method generates CloneNotSupportedException.
+-The clone() method is defined in the Object class. 
+-Syntax of the clone() method is as follows:
+-protected Object clone() throws CloneNotSupportedException 
+ {
+  return super.clone();  
+ }   					  
+ 
+7.HOW TO CREATE INFINITE-LOOPS IN FOR-LOOP
+Answer:
+=======
+METHOD-1
+--------
+public class Sample
+{
+    public static void main(String[] args)
+    {
+        for(;1==1;)
+        {
+            System.out.println("hello");
+        }
+
+    }
+}
+METHOD-2
+--------
+public class Sample
+{
+    public static void main(String[] args)
+    {
+        for(;true;)
+        {
+            System.out.println("hello");
+        }
+
+    }
+}
+METHOD-3
+--------
+public class Sample
+{
+    public static void main(String[] args)
+    {
+        for(int i=10;i>0;)
+        {
+            System.out.println("hello");
+        }
+
+    }
+}
+
+8.ASSOCIATION,COMPOSITION & AGGREGATION:-
+=========================================
+Answer:-
+========
+ASSOCIATION:-
+-------------
+-Association is a relation between two separate classes which establishes through their Objects. 
+-Association can be one-to-one, one-to-many, many-to-one, many-to-many. 
+-In Object-Oriented programming, an Object communicates to another object to use functionality and services provided by that object. 
+-Composition and Aggregation are the two forms of association. 
+-whereas,Aggregation implies ==> "HAS-A" relation.(child can exist independently of the parent.)(Eg:Bank-Employee)
+-whereas,Composition implies ==> "PART-OF" relation.(child cannnot exist independently of the parent.)(Eg:Human-Heart)
+-Composition is a strong Association ,Aggregation is a weak Association.
+
+9.PACKAGES:-
+=============
+-A package in Java is used to group related classes. 
+-A package is a namespace that organizes a set of related classes and interfaces.
+-Package in Java is a mechanism to encapsulate a group of classes, sub packages and interfaces.
+-Packages can be considered as data encapsulation (or data-hiding).
+-collection of similar types of sub-packages, interfaces, and classes. 

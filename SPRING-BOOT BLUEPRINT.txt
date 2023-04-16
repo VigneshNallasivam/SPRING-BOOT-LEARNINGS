@@ -1,0 +1,120 @@
+//SPRING-BOOT BLUEPRINT/CREATION
+
+
+
+
+
+                                               SPRING-BOOT BLUEPRINT
+											   =====================
+=>STEP-1:-
+==========
+LAYERS/PACKAGES TO BE CREATED:-
+-------------------------------
+CDEERS
+#CONTROLLER LAYER(Creation OF API's)
+#DTO(DATA TRANSFER OBJECT) LAYER(Using Of Encapsulation/Data Secure Purpose)
+#ENTITY LAYER(Creation Of Data-Base Table)
+#EXCEPTION LAYER(Creation of Custom-Exception)
+#REPOSITORY LAYER(Connection of Data-Base & Management of Data-Base)
+#SERVICE LAYER(Creating Logics For Controller)
+
+=>STEP-2:-
+==========
+DEPENDENCIES/POM.XML FILE TO BE ADDED:-
+---------------------------------------
+        <!--spring Web-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        
+		<!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+            <scope>provided</scope>
+        </dependency>
+        
+		<!--Validation-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+        
+		<!--DevTools-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
+        
+		<!--Spring-Test-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        
+		<!--SQL-Connector -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        
+		<!--JPA-Repository-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+		
+=>STEP-3:-
+==========
+USAGE OF APPLICATION PROPERTIES:-
+---------------------------------
+In application.properties:-
+---------------------------
+server.port=8080
+environment=common
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=jdbc:mysql://localhost:3306/employee
+spring.datasource.username=root
+spring.datasource.password=root
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.jpa.show-sql=true
+spring.profiles.active=dev
+
+In application-dev.properties:-
+-------------------------------
+environment=dev
+
+logging.level.root=info
+logging.pattern.console=%clr(%d{yyyy-dd-MM HH:mm}[%level][%thread][%logger{6}:%line]){Green} %msg%n
+
+In application-test.properties:-
+--------------------------------
+environment=test
+
+logging.file.name=application.log
+logging.level.root=warn
+logging.pattern.file=%clr(%d{yyyy-dd-MM HH:mm}[%level][%thread][%logger{6}:%line]){Red} %msg%n
+
+=>STEP-4:-
+==========
+CREATION OF DATABASE:-
+----------------------
+Goto MySql--->create Database--->use DataBase--->Select *from tablename--->You Will Get the required databases data output
+
+=>STEP-5:-
+==========
+USAGE OF POST-MAN APPLICATION:-
+-------------------------------
+#Type http://localhost:8080/giveRequiredAPIs{using of Path-Variables}
+#Select REST Methods from Drop-Down whether you are Choosing POST/PUT/GET/DELETE
+#In-case for the need of Request-Body select body-->select raw-->then select JSON from drop-down--->then press SEND
+#In-case for the need of Request-Param select params-->enter Key&Value-->then press SEND
+#You Will Get the Requied OUTPUT message/Data/HTTP-Response/Exception-msgs
+
+

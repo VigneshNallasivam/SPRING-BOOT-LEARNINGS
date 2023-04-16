@@ -1,0 +1,17 @@
+//REST TEMPLATE
+
+
+
+                                                 REST TEMPLATE
+												 =============
+- According to the official documentation, RestTemplate is a synchronous client to perform HTTP requests
+- RestTemplate’ is a synchronous REST client provided by the core Spring Framework.
+- RestTemplate’ is a synchronous REST client provided by the core Spring Framework.
+- RestTemplate adds the capability of transforming the request and response in JSON or XML to Java objects.
+
+METHODS:-
+---------
+#getForObject() - Will perform a GET and return an object.
+#getForEntity() - Executes a GET request and returns an object of ResponseEntity class 
+                  that contains both the status code and the resource as an object.
+#getForObject() : similar to getForEntity(), but returns the resource directly.

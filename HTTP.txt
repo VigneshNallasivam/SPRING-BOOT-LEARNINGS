@@ -1,0 +1,19 @@
+//HTTP
+
+
+                                         HTTP(Hyper Text Transfer Protocol)
+										 ==================================
+				[Explanation : https://www.freecodecamp.org/news/what-is-https-http-vs-https-meaning-and-how-it-works/]
+=>HTTP:-
+-------
+-HTTP (Hypertext Transfer Protocol) is the set of rules for transferring files -- such as text, images, sound, video and other multimedia files -- over the web. 
+-As soon as a user opens their web browser, they are indirectly using HTTP. 
+-HTTP is an application protocol that runs on top of the TCP/IP suite of protocols, which forms the foundation of the internet.
+-The latest version of HTTP is HTTP/2, which was published in May 2015. 
+-It is an alternative to its predecessor, HTTP 1.1, but does not it make obsolete.
+=>HTTPs:-
+---------
+-Hypertext Transfer Protocol Secure (https) is a combination of the Hypertext Transfer Protocol (HTTP) with the Secure Socket Layer (SSL)/Transport Layer Security (TLS) protocol.
+-TLS is an authentication and security protocol widely implemented in browsers and Web servers.
+-HTTPS means Hypertext Transfer Protocol Secure (HTTPS) and it is used to establish a secure connection between you and the site that you visit.
+-It uses encryption for secure communication over a computer network, and is widely used on the Internet.

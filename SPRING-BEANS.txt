@@ -1,0 +1,33 @@
+//SPRING-BEANS
+
+
+
+                                              SPRING-BEANS
+											  ============
+-Spring beans are the objects which are created and managed completely by spring container.
+-These beans are the heart of the application.
+-Spring bean is an object that form the backbone of your application and that is managed by the Spring IoC container.
+-In terms of a Spring boot application, a bean is simply a Java object which is created by Spring framework when the application starts.
+-SPRING IoC CONTAINER:-
+ ----------------------
+ Spring IoC (Inversion of Control) Container is the core of Spring Framework. 
+ It creates the objects, configures and assembles their dependencies, manages their entire life cycle.
+ The Container uses Dependency Injection(DI) to manage the components that make up the application.
+ 
+BEAN ANNOTATION(@Bean):-
+========================
+-@Bean annotation which is applied on a method to specify that it returns a bean to be managed by Spring context. 
+-Spring Bean annotation is usually declared in Configuration classes methods. 
+-This annotation is also a part of the spring core framework.
+
+Example:-
+---------
+@Configuration
+public class Sample
+{
+  @Bean
+  public Sample display()
+  {
+    return new Sample();
+  }
+}

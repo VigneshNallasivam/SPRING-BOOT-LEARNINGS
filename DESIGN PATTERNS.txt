@@ -1,0 +1,47 @@
+//DESINGN PATTERNS IN SPRING-BOOT
+
+
+
+                                     SPRING-BOOT DESIGN PATTERNS
+									 ===========================
+What is Design pattern?
+Design patterns are formalized best practices that the programmer can use 
+to solve common problems when designing an application or system.
+
+TYPES OF DESIGN PATTERNS:-
+--------------------------
+#1.Singleton pattern.
+#2.Factory Method pattern.
+#3.Proxy pattern.
+#4.Template pattern.
+#5.Front Controller Pattern
+#6.View Helper Pattern
+#7.Model View Controller pattern
+#8.Dependency Injection/Inversion of Control
+#9.Service-Locator Pattern
+#10.Observer-Observable Pattern
+#11.Context-Object Pattern
+
+Here,First 4 Patterns are Mostly Used,
+
+1.SINGLETON PATTERN:-
+=====================
+-says that just"define a class that has only one instance of Object and provides a global point of access to it".
+
+2.FACTORY-METHOD PATTERN:-
+==========================
+-A method that returns instance/Object of a class is called factory method.
+
+3.PROXY(in the Place Of) PATTERN:-
+==================================
+-Provide a surrogate or placeholder for another object to control access to it.
+-The Proxy pattern is part of the classic Gang of Four (GoF) structural pattern family
+ whose common objective is to handle relationships between classes and objects in a simple way.
+-The objective of a proxy object is to control the creation of and access to the real object it represents.
+-A common use of a proxy is to defer the cost of instantiating of an object (that is expensive to create) until it is actually needed by clients.
+
+4.TEMPLATE PATTERN:-
+====================
+-The template method pattern is a technique that defines the steps required for some action, 
+ implementing the boilerplate steps, and leaving the customizable steps as abstract. 
+-Subclasses can then implement this abstract class and provide a concrete implementation for the missing steps.

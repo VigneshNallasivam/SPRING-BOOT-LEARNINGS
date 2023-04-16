@@ -1,0 +1,132 @@
+//INTRODUCTION TO SPRING-BOOT
+
+
+
+                                                INTRODUCTION TO SPRING-BOOT
+												===========================
+What is FRAMEWORK?
+-A framework in programming is a tool that provides ready-made components or solutions that are customized in order to speed up development.
+-A framework can include support programs, compilers, code libraries, toolsets, and APIs to develop software and create systems. 
+-Open-source frameworks are always being updated and improved.
+
+what is MICRO-SERVICES?
+-Microservice is defined as the small services that work together. 
+-The microservice defines an approach to the architecture that divides an application into a pool of loosely coupled services that implement business requirements).
+
+What is REST API?
+-Representational state transfer (REST) API is a software architectural style that describes a uniform interface between physically separate components, 
+ often across the Internet in a client-server architecture.
+-An interface that two computer systems use to exchange information securely over the internet.
+-It's used to fetch or give some information from a web service.
+
+what is Dependency?
+Dependency is nothing but a 'Library' that provides specific functionality that we can use in our application.
+
+what is Deployment Descriptor?
+-In a java web application a file named web.xml is known as deployment descriptor. 
+-It is a xml file and <web-app> is the root element for it. 
+-When a request comes web server uses web.xml file to map the URL of the request to the specific code that handle the request.
+
+What is CLI?
+Command Line Interface/Input/Interpretor(CLI)is a command line program that accepts text input to execute operating-system(OS) functions.
+
+SPRING-BOOT VS SPRING-FRAMEWORK:-
+---------------------------------
+KEY DIFFERENCE :-
+-----------------
+=>Spring framework is a java EE framework that is used to build applications.
+  Spring Dependency Injection (DI) is the feature of the core module of the Spring Framework, 
+  where the Spring Container injects other objects into an object. 
+  Here, other objects are nothing but dependencies (instance variables) which are declared in the class (Spring Bean).
+  Based on loosely Coupling( When an object gets the object to be used from the outside, then it is a loose coupling situation.)
+  Other than tightly Coupling(When an object creates the object to be used, then it is a tight coupling situation.
+                             object can not be changed from outside world easily marked it as tightly coupled objects.)
+  This is one of the design Patterns
+
+=>Spring Boot framework is mainly used to develop REST API’s
+  Autoconfiguration is a method of automatically configuring a Spring application based on the dependencies found on the classpath.)
+  Autoconfiguration can speed up and simplify development
+-------------------------------------------------------------------------------------------------------------------
+SPRING-FRAMEWORK                                         |            SPRING-BOOT
+-------------------------------------------------------------------------------------------------------------------
+#.Spring is a lightweight application framework and      | #.Spring Boot makes it easy to create stand-alone,
+we can say it is similar to the framework of frameworks  |   production-grade Spring based Applications. 
+because it provides support to various frameworks        |
+such as Struts, JSP, Hibernate, etc.                     |
+                                                         |
+#.The first version of the Spring framework was          | #.Spring Boot is an open-source micro framework 
+written by Rod Johnson in 2002 and the framework was     |   developed & maintained by a company called Pivotal
+first released in 2003 under the Apache license          |   in 2014
+version 2.0.                                             |   
+                                                         |
+#.The current stable version, as of December 2022,       | #.The current stable version, as of December 2022, 
+is Spring 6.0.2                                          |   is Spring Boot 3.0.0.
+                                                         |
+#.Spring framework helps to create a                     | #.Spring Boot helps to create a stand-alone application.
+loosely coupled application.                             |
+                                                         |
+#.In the Spring framework to test the Spring Project,    | #.Spring Boot offers built-in or embedded servers 
+we need to set up the servers explicitly.	             |   such as Tomcat and jetty.
+                                                         |
+#.To run a Spring application a deployment descriptor    | #.In Spring Boot there is no need for the 
+is required.	                                         |   Deployment descriptor.
+                                                         |
+#.Spring framework requires too many lines of code       | #.You avoid boilerplate code which reduces time 
+(boilerplate code) even for minimal tasks.               |   and increases productivity.
+                                                         |
+#.In the Spring framework, you have to build             | #.In Spring Boot there are default configurations 
+configurations manually.	                             |   that allow faster bootstrapping.
+                                                         |
+#.Spring Framework requires a number of dependencies     | #.Spring Boot, on the other hand, can get an application working with just one dependency. 
+to create a web app.	                                 |   There are several more dependencies required during build time that is added to the final archive by default.
+                                                         |
+#.Spring framework does not provide support for          | #.Spring Boot provides support for the in-memory 
+the in-memory database.                                  |   database such as H2.
+                                                         |
+#.HTTP Basic Authentication is for enabling security     | #.Spring Boot also requires these dependencies to make it work,  
+confirmations, it indicates that several dependencies    |   but we only need to define the dependency of spring-boot-starter-security
+and configurations need to be enabled to                 |   as this will automatically add all the relevant dependencies to the classpath.
+enable security. Spring requires both the standard       |
+spring-security-web and spring-security-config           |
+dependencies to set up security in an application.       |
+Next, we need to add a class	                         |
+                                                         |
+#.Testing in Spring is difficult in comparison to        | #.Testing in Spring Boot is easier due to 
+Spring Boot due to a large amount of source code.        |   the reduced amount of source code.
+                                                         |
+#.In the Spring framework, XML Configuration             | #.No need for XML configuration in Spring Boot.
+is required.	                                         |
+                                                         |
+#.Spring framework does not provide any CLI tool for     | #.Spring Boot provides a CLI tool for developing 
+developing and testing applications.                     |   and testing Spring Boot applications.
+                                                         |
+#.Spring framework does not provide any plugin           | #.Spring Boot provides build tool plugins for Maven and Gradle. 
+for maven,Gradle, etc. like Spring Boot.			     |	 The Plugins offer a variety of features, including the packaging of executable jars.				   
+                                                         |
+_________________________________________________________|______________________________________________________________________________________________________
+
+3 CORE CAPABILITIES OF SPRING-BOOT:-
+------------------------------------
+#1.AUTOCONFIGURATION: It means that applications are initialized with pre-set dependencies that you don't have to configure manually.
+                      As Java Spring Boot comes with built-in autoconfiguration capabilities,it automatically configures both the underlying Spring Framework and third-party packages based on your settings
+
+#2.OPINIONATED APPROACH: Spring Boot uses an opinionated approach to adding and configuring starter dependencies, based on the needs of your project. 
+                         Following its own judgment, Spring Boot chooses which packages to install and which default values to use, rather than requiring you to make all those decisions yourself and set up everything manually.
+						
+#3.STANDALONE APPLICATIONS: Spring Boot helps developers create applications that just run. 
+                            Specifically, it lets you create standalone applications that run on their own, without relying on an external web server, by embedding a web server such as Tomcat or Netty into your app during the initialization process. 
+                            As a result, you can launch your application on any platform by simply hitting the Run command.
+							
+Does spring boot replace spring?
+-Spring Boot isn’t meant to be a replacement for Spring; rather, it’s meant to make working with it faster and easier. 
+-As a result, the majority of the modifications required to migrate an application are configuration-related.
+
+When should you not use a Spring boot?
+-Spring Boot is not suitable for large-scale projects because Spring Boot creates a lot of unused dependencies, resulting in large deployment files.
+
+What is Spring Boot best for?
+Spring Boot means something that lets you bootstrap a spring application from scratch and the Spring Boot framework is mainly used to develop REST APIs.
+
+What is Bootstrap?
+Bootstrap is a free, open source front-end(CSS,JS & HTML) development framework for the creation of websites and web apps.
+

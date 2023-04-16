@@ -1,0 +1,40 @@
+//USES OF SPRING-BOOT LAYERS
+
+
+
+
+                                             USES OF SPRING-BOOT LAYERS
+											 ==========================
+-Totally there are 8 layers,Namely
+                              ==>Controller-LAYER:-
+							  ---------------------
+							  Uses:Creation of API's
+							  
+							  ==>DTO-LAYER:-
+							  --------------
+							  Uses:Implements Encapsulation
+							  
+							  ==>Entity/Model-LAYER:-
+							  -----------------------
+							  Uses:Creation of Variables and Tables Needed for Database-Creation
+							  
+							  ==>Exception-LAYER:-
+							  --------------------
+							  Uses:Creation of Exceptions/Custom-Exceptions Whenever needed by the User
+							  
+							  ==>Repository-LAYER:-
+							  ---------------------
+							  Uses:Create Connection,Manage,creating custom-queries for  data-dase
+							  
+							  ==>Service-LAYER:-
+							  ------------------
+							  Uses:Providing backbone logics for Controller-LAYER
+							  
+							  ==>Utility-LAYER:-
+							  ------------------
+							  Uses:Provides needed utilies and services required for the created applications like Mail-Service & Token-Creation etc..,
+							  
+							  ==>Application-LAYER:-
+							  ----------------------
+							  Uses: This is Main-LAYER where it runs the entire application with the help of @SpringBootApplication tag
+							        This layer is Combination of above 7 LAYERS.

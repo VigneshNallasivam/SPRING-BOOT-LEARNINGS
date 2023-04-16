@@ -1,0 +1,72 @@
+//SPRING-BOOT ANNOTATIONS
+
+
+
+                                            SPRING-BOOT ANNOTATIONS
+											=======================
+
+CONTROLLER LAYER
+----------------
+-@Controller ==>Indicates that a particular class serves the role of a controller.
+                Inside of this annotation we can use @RequestMapping & @ResponseBody
+-@ResponseBody ==>Tells a controller that the object returned is automatically serialized into JSON 
+                  and passed back into the HttpResponse object.
+				
+-@RequestMapping ==>It is an Older-Version Usage
+                    It Comes Under @Controller
+					With the help of this annotation we can other perform other annotations Operations such as POST,PUT,GET,DELETE
+-@RequestHeader ==>Binds request header values to method parameters.
+-@GetMapping ==>To Get the details from Data-Base.
+-@PostMapping ==>To Insert details into Data-Base.
+-@PutMapping ==>To Edit/Update details in the Data-Base.
+-@DeleteMapping ==>To delete details in the Data-Base.
+-@RequestBody ==>To add or write details into the data-base as JSON file.
+-@PathVariable ==>To Perform all kinds of Operations by giving a Primary-Key Variable/Variable in the API Path.
+-@RequestParam ==>To Give the Parameter details to different kinds of Mappings.
+-@AutoWired ==>To create an Object for different Classes in the Currently Using Class.
+
+
+ENTITY LAYER
+------------
+-@Entity ==>To Create the Table in the data-base.
+-@Table ==>To mention table in the data-base.
+-@Column,@Id ==>To Perform the Usage of column/Id in the data-base.
+
+REPOSITORY LAYER
+----------------
+-@Repository ==>To Mention that currently using class will be the Repository layer and used to perform CURD Operation
+-@Transactional==>To wrap a method in a database
+-@Modifying==>To enhance the @Query annotation so that we can execute not only SELECT queries, but also INSERT, UPDATE, DELETE
+-@Query==>Declares finder queries directly on repository methods.
+
+SERVICE LAYER
+-------------
+-@Service ==>To Mention that currently using class will be the Service layer.
+-@Override ==>To Over-Riding the Partly Available details in the different classes Eg:-toString() Method.
+
+DTO(Data Transfer Object) LAYER
+-------------------------------
+-@Data(under lombok Dependency) - Defaultly/InBuilt adding the getter,setter And toString() methods.
+-@NoArgsConstructor(under lombok Dependency)
+
+EXCEPTION LAYER
+---------------
+-@ControllerAdvice - Allows handling exceptions across the whole application in one global handling component.
+-@ExceptionHandler - Used to handle the specific exceptions and sending the custom responses to the client.
+
+UTILITY LAYER
+-------------
+-@Component - Allows Spring to automatically detect our custom beans.
+
+APPLICATION LAYER
+-----------------
+-@SpringBootApplication
+    (Or)
+-@AutoConfiguration
+-@Configuration
+-@ComponentScan
+-@EnableEurekaServer
+-@EnableDiscoveryClient
+-@EnableEurekaClient
+-@Slf4j
+

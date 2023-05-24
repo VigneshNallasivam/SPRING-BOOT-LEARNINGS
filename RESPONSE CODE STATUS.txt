@@ -29,3 +29,7 @@ Note:-
 ======
 If you receive a response that is not in this list, it is a non-standard response, 
 possibly custom to the server's software.
+
+ALL RESPONSE CODES
+==================
+Link : https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
